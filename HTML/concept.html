@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLD is easy</title>
     <link rel="stylesheet" href="../CSS/index.css?=202506031" />
+    <link rel="stylesheet" href="../CSS/concept.css?20250603">
     <link rel="icon" href="../IMG/icon.png" type="image/png" />
     <link rel="apple-touch-icon" href="../IMG/icon.png">
 </head>
@@ -32,14 +33,61 @@
 
     <main>
         <section>
-            
+            <h3>为什么盲拧是可行的?</h3>
+            <p>目前的主流速拧方法(CFOP, ROUX, ZZ, 层先...)在每一步的复原过程中, 我们只关注对应的块, 而忽略其他块的变化
+                (如做F2L时, 会忽略顶层的块的走向). 因为盲拧不能在复原时看到魔方的实时状态, 所以用速拧方法来进行盲拧是很困难的.
+            </p>
+            <p>盲拧方法的核心: 每次复原一部分块(通常是1或2个)的时候, 不影响其他块的位置与朝向. 所以我们可以只记忆要复原的块的序列,
+                便可以一步一步地复原整个魔方, 在每一步的复原过程中, 其他所有无关块都不会受到影响, 所以也不用脑补那些块的动向.
+            </p>
+
+            <h3>具体如何复原?</h3>
+            <p>假设你有6张数字卡片依序排列</p>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr class="numcard">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <p>它们现在被打乱成这样</p>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr class="numcard">
+                    <td>3</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <p><b>任务1</b>: 每次只能交换两张卡(即不能把牌全部拿出来然后一张一张地放回去), 请复原卡片的顺序</p>
+            <p><b>任务2</b>: 每次只能交换两张卡, 而且一旦你开始交换卡片, 你就不能再看到卡的实时排列状态, 请复原卡片的顺序</p>
         </section>
     </main>
 
 
     <div style="height: 30vw;"></div>
     <footer>
-
         &copy; 2025 Maple Feng (<a href="https://www.worldcubeassociation.org/persons/2017FENG35">2017FENG35</a>)
     </footer>
 
