@@ -2,6 +2,8 @@ body {
     font-family: sans-serif;
     padding: 2em;
     background: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header {
@@ -61,4 +63,35 @@ header {
 
 .show {
     display: block;
+}
+
+.custom-list {
+  padding-left: 1.2em;
+  margin: 1em 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.custom-list li {
+  margin-bottom: 0.5em;
+}
+
+/* 美化 ul 的圆点 */
+.custom-list ul li {
+  list-style-type: disc;
+}
+
+/* 美化 ol 的数字 */
+.custom-list ol {
+  list-style-type: decimal;
+}
+
+ul.custom-list li {
+  list-style-type: square;
+}
+
+footer {
+  color: #555;
+  text-align: center;
+  width: 100%;
 }

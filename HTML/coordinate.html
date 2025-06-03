@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLD is easy</title>
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/coordinate.css" />
+    <link rel="icon" href="../IMG/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../IMG/icon.png">
+</head>
+
+<body>
+    <h1 style="text-align: center; background-color: #2b2b2b;color:white; border-radius: 5rem;padding: 0.5rem;">盲解魔方教程
+    </h1>
+    <header>
+        <div style="width: 33%;">
+            <h2>坐标系</h2>
+        </div>
+        <div style="width: 33%; text-align: center;">
+
+        </div>
+        <div class="dropdown" style="width: 33%; text-align: right;">
+            <button class="dropdown-toggle" onclick="toggleMenu()">目录</button>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="../index.html">背景</a>
+                <a href="./concept.html">盲拧原理</a>
+                <a href="./coordinate.html">坐标系</a>
+                <a href="./edge.html">棱块复原</a>
+                <a href="./corner.html">角块复原</a>
+                <a href="./parity.html">奇偶效验</a>
+                <a href="./memorizing.html">记忆方法</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h3>彳亍编码</h3>
+            <table class="coordinate">
+                <tr>
+                    <td colspan="3" rowspan="3" style="border: 0;"></td>
+                    <td class="U">D</td>
+                    <td class="U">E</td>
+                    <td class="U">G</td>
+                </tr>
+                <tr>
+                    <td class="U">C</td>
+                    <td class="U"></td>
+                    <td class="U">G</td>
+                </tr>
+                <tr>
+                    <td class="U">A</td>
+                    <td class="U">A</td>
+                    <td class="U">J</td>
+                </tr>
+
+                <tr>
+                    <td class="L">E</td>
+                    <td class="L">D</td>
+                    <td class="L">C</td>
+
+                    <td class="F">B</td>
+                    <td class="F">B</td>
+                    <td class="F">L</td>
+
+                    <td class="R">K</td>
+                    <td class="R">H</td>
+                    <td class="R">I</td>
+
+                    <td class="B">H</td>
+                    <td class="B">F</td>
+                    <td class="B">F</td>
+                </tr>
+                <tr>
+                    <td class="L">X</td>
+                    <td class="L"> </td>
+                    <td class="L">T</td>
+
+                    <td class="F">S</td>
+                    <td class="F"></td>
+                    <td class="F">Q</td>
+
+                    <td class="R">R</td>
+                    <td class="R"> </td>
+                    <td class="R">Z</td>
+
+                    <td class="B">Y</td>
+                    <td class="B"></td>
+                    <td class="B">W</td>
+                </tr>
+                <tr>
+                    <td class="L">Q</td>
+                    <td class="L">L</td>
+                    <td class="L">M</td>
+
+                    <td class="F">N</td>
+                    <td class="F">J</td>
+                    <td class="F">Y</td>
+
+                    <td class="R">Z</td>
+                    <td class="R">P</td>
+                    <td class="R">S</td>
+
+                    <td class="B">T</td>
+                    <td class="B">N</td>
+                    <td class="B">P</td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="3" style="border: 0;"></td>
+                    <td class="D">W</td>
+                    <td class="D">I</td>
+                    <td class="D">X</td>
+                </tr>
+                <tr>
+                    <td class="D">K</td>
+                    <td class="D"> </td>
+                    <td class="D">O</td>
+                </tr>
+                <tr>
+                    <td class="D">O</td>
+                    <td class="D">M</td>
+                    <td class="D">R</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+
+    <div style="height: 30vw;"></div>
+    <footer>
+
+        &copy; 2025 Maple Feng (<a href="https://www.worldcubeassociation.org/persons/2017FENG35">2017FENG35</a>)
+    </footer>
+
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>

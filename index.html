@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <h1 style="text-align: center; background-color: #2b2b2b;color:white; border-radius: 5rem;padding: 0.5rem;">盲解魔方教程</h1>
+    <h1 style="text-align: center; background-color: #2b2b2b;color:white; border-radius: 5rem;padding: 0.5rem;">盲解魔方教程
+    </h1>
     <header>
         <div style="width: 33%;">
             <h2>背景</h2>
@@ -23,12 +24,12 @@
             <button class="dropdown-toggle" onclick="toggleMenu()">目录</button>
             <div class="dropdown-menu" id="dropdown-menu">
                 <a href="./index.html">背景</a>
-                <a href="">盲拧原理</a>
-                <a href="">坐标系</a>
-                <a href="">棱块复原</a>
-                <a href="">角块复原</a>
-                <a href="">奇偶效验</a>
-                <a href="">记忆方法</a>
+                <a href="./HTML/concept.html">盲拧原理</a>
+                <a href="./HTML/coordinate.html">坐标系</a>
+                <a href="./HTML/edge.html">棱块复原</a>
+                <a href="./HTML/corner.html">角块复原</a>
+                <a href="./HTML/parity.html">奇偶效验</a>
+                <a href="./HTML/memorizing.html">记忆方法</a>
             </div>
         </div>
     </header>
@@ -42,23 +43,23 @@
             <h3>本教程所采用方法</h3>
             <p>基础彳亍法: 这是一位叫"彳亍"的魔友发明的盲拧方法, 其为3-style的简化版本. 本教程主要基于B站知名魔方up主"依旧是一九四"所发布的
                 <a
-                    href="https://www.bilibili.com/video/BV1EE41117ZR/?share_source=copy_web&vd_source=f06c5c633620cd516761ffc3eb634054">视频教程</a>
-                本人认为这是最好的中文盲拧入门教程, 但由于视频教程不太方便随时查询需要的内容, 故我做了这一个网站, 方便初学的魔友随时查阅
+                    href="https://www.bilibili.com/video/BV1EE41117ZR/?share_source=copy_web&vd_source=f06c5c633620cd516761ffc3eb634054">视频教程</a>.
+                本人认为这是最好的中文盲拧入门的视频教程, 但由于视频教程不太方便随时查询需要的内容, 故我做了这一个网站, 方便初学的魔友随时查阅.
             </p>
             <h3>目录</h3>
-            <p>本教程分为以下几个部分</p>
-            <ol>
+            <p>本教程分为以下几个部分:</p>
+            <ol class="custom-list">
                 <li>盲拧原理(盲拧为什么是可行的)</li>
                 <li>坐标系(盲拧的准备工作)</li>
                 <li>棱块复原
-                    <ul>
+                    <ul class="custom-list">
                         <li>常规编码</li>
                         <li>小循环</li>
                         <li>原地翻色</li>
                     </ul>
                 </li>
                 <li>角块复原
-                    <ul>
+                    <ul class="custom-list">
                         <li>常规编码</li>
                         <li>小循环</li>
                         <li>原地翻色</li>
@@ -66,7 +67,7 @@
                 </li>
                 <li>奇偶效验</li>
                 <li>记忆方法
-                    <ul>
+                    <ul class="custom-list">
                         <li>联想词记忆</li>
                         <li>拼音记忆</li>
                     </ul>
@@ -76,10 +77,10 @@
     </main>
 
 
-
+    <div style="height: 30vw;"></div>
     <footer>
-        <div style="height: 30vw;"></div>
-        &copy; 2025 Maple Feng (2017FENG35)
+
+        &copy; 2025 Maple Feng (<a href="https://www.worldcubeassociation.org/persons/2017FENG35">2017FENG35</a>)
     </footer>
 
     <script src="./JS/index.js"></script>

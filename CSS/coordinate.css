@@ -1,0 +1,27 @@
+
+.coordinate tr td{
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    text-align: center;
+    border: 1px solid gray;
+}
+.U {
+    background-color: yellow;
+}
+.L {
+    background-color: blue;
+    color: white;
+}
+.F {
+    background-color: red;
+    color: white;
+}
+.R {
+    background-color: lightgreen;
+}
+.B {
+    background-color: orange;
+}
+.D {
+    background-color: white;
+}
