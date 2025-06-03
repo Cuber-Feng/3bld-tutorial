@@ -3,9 +3,11 @@ function toggleMenu() {
     menu.classList.toggle('show');
 }
 
-// Optional: close menu if clicking outside
-window.addEventListener('click', function (e) {
-    if (!e.target.matches('.dropdown-toggle')) {
-        document.getElementById('dropdown-menu').classList.remove('show');
-    }
+//close menu if clicking outside
+['click', 'touchstart'].forEach(eventName => {
+    window.addEventListener(eventName, function (e) {
+        if (!e.target.matches('.dropdown-toggle')) {
+            document.getElementById('dropdown-menu').classList.remove('show');
+        }
+    });
 });
