@@ -18,31 +18,131 @@
         </div>
         <div class="dropdown" style="width: 33%; text-align: right;">
             <button class="dropdown-toggle" onclick="toggleMenu()">目录</button>
-            <div class="dropdown-menu" id="dropdown-menu">
-                <a href="../index.html">概述</a>
-                <a href="./concept.html">盲拧原理</a>
-                <a href="./coordinate.html">坐标系</a>
-                <a href="./edge.html">棱块复原</a>
-                <a href="./corner.html">角块复原</a>
-                <a href="./parity.html">奇偶效验</a>
-                <a href="./memorizing.html">记忆方法</a>
-            </div>
+            <div id="menu-placeholder"></div>
         </div>
     </header>
 
     <main>
         <section>
-            
+            <p>个人认为这是学盲拧中最重要的一步, 也是很多学盲拧的魔友半途而废的原因.
+                不过只要花时间练习, 快速记住20个左右的字母其实比想象的简单.
+            </p>
+            <p>总所周知, 人类记忆有意义内容的效率远高于记忆无意义内容. 所以无论什么记忆方法,
+                核心都是把无意义的字母转化为有意义的内容(联想词记忆法), 或者缩短记忆的量(拼音记忆法)
+            </p>
+            <p>棱块和角块可以使用不同的记忆方法, 我就是棱块用拼音记, 角块用联想词记</p>
+            <h3>联想词记忆法</h3>
+            <p>最广泛使用的一种盲拧记忆方法, 即把每两个字母用一个词语代替, 把无意义的字母序列转换成有意义的几个词,
+                如LR&rarr;老人, NH&rarr;南韩, NG&rarr;南瓜.
+            </p>
+            <p>如果是英语母语者, 也可以用英文单词, 如CT&rarr;Cat, AP&rarr;Apple.</p>
+            <b>小技巧</b>
+            <ul>
+                <li>可以用这些词语串成一个故事(比如一个<b>老人</b>去<b>南韩</b>旅游, 买了一个<b>南瓜</b>),
+                    熟练之后也可以不用编故事直接记</li>
+                <li>有些字母比较特殊, 以它开始的字特别少, 我的建议是可以<b>用缓冲块的字母去代替那些字母</b>.
+                    我的角块缓冲是UFR, 缓冲块上的字母是JKL, 所以我用JKL分别代替了IEO,
+                    如EO&rarr;KL&rarr;可乐
+                </li>
+            </ul>
+            <h3>拼音记忆法</h3>
+            <p>类似于双拼打字法, 即把每一个字母赋予一个<b>声母</b>和一个<b>韵母</b>(包含声调), 然后把一个两个字母转为一个读音.
+                如CI&rarr;cūn(对于两个字母, 前一个直接使用自己(声母), 后一个用该字母对应的韵母)
+            </p>
+            <p>本方法需要额外记忆一个韵母的坐标系.</p>
+            <table class="coordinate">
+                <tr>
+                    <td colspan="3" rowspan="3" style="border: 0;"></td>
+                    <td class="U"></td>
+                    <td class="U">ǎ</td>
+                    <td class="U"></td>
+                </tr>
+                <tr>
+                    <td class="U">ā</td>
+                    <td class="U"><b>上</b></td>
+                    <td class="U">à</td>
+                </tr>
+                <tr>
+                    <td class="U">&nbsp;</td>
+                    <td class="U"> </td>
+                    <td class="U"> </td>
+                </tr>
+
+                <tr>
+                    <td class="L"></td>
+                    <td class="L">ī</td>
+                    <td class="L"></td>
+
+                    <td class="F"></td>
+                    <td class="F">&nbsp;</td>
+                    <td class="F"></td>
+
+                    <td class="R"></td>
+                    <td class="R">ì</td>
+                    <td class="R"></td>
+
+                    <td class="B"></td>
+                    <td class="B">ǐ</td>
+                    <td class="B"></td>
+                </tr>
+                <tr>
+                    <td class="L">ě</td>
+                    <td class="L"><b>左</b></td>
+                    <td class="L">ē</td>
+
+                    <td class="F">ān</td>
+                    <td class="F"><b>前</b></td>
+                    <td class="F">ǎn</td>
+
+                    <td class="R">ōu</td>
+                    <td class="R"><b>右</b></td>
+                    <td class="R">ǒu</td>
+
+                    <td class="B">ǔ</td>
+                    <td class="B"><b>后</b></td>
+                    <td class="B">ū</td>
+                </tr>
+                <tr>
+                    <td class="L"></td>
+                    <td class="L">è</td>
+                    <td class="L"></td>
+
+                    <td class="F"></td>
+                    <td class="F">àn</td>
+                    <td class="F"></td>
+
+                    <td class="R"></td>
+                    <td class="R">òu</td>
+                    <td class="R"></td>
+
+                    <td class="B"></td>
+                    <td class="B">ù</td>
+                    <td class="B"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="3" style="border: 0;"></td>
+                    <td class="D"></td>
+                    <td class="D">ūn</td>
+                    <td class="D"></td>
+                </tr>
+                <tr>
+                    <td class="D">āng</td>
+                    <td class="D"><b>下</b></td>
+                    <td class="D">àng</td>
+                </tr>
+                <tr>
+                    <td class="D"></td>
+                    <td class="D">ùn</td>
+                    <td class="D"></td>
+                </tr>
+            </table>
         </section>
     </main>
 
 
     <div style="height: 30vw;"></div>
-    <footer>
-
-        &copy; 2025 Maple Feng (<a href="https://www.worldcubeassociation.org/persons/2017FENG35">2017FENG35</a>)
-    </footer>
-
+    <div id="footer-placeholder"></div>
+    <script src="../JS/loder.js"></script>
     <script src="../JS/index.js?=20250603"></script>
 </body>
 
